@@ -2,7 +2,7 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px;
   line-height: 1.5;
-  width: 960px;
+  width: 80%;
   max-width: 1300px;
   margin: 0 auto;
 }
@@ -162,7 +162,46 @@ footer {
   padding: 20px 30px;
 }
 
+@media only screen and (max-width:1000px) {
+body {
+width: 95%;
+}
+header {
+/* display: flex; */
+flex-direction: column;
+}
+.header-nav__a {
+margin-top: 20px;
+justify-content:flex-start;
+padding-left: 0px;
+padding-right: 20px;
+}
+}
 
+@media only screen and (max-width:550px) {
+body {
+width: 100%;
+font-size: 14;
+}
+.banner {
+justify-content: center;
+}
+.touts {
+  display:flex;
+  flex-direction: column;
+  height:700px;
+}
+
+.tout{
+  width:80%;
+  border-right: none;
+
+}
+
+.tagline{
+  display:none;
+}
+}
 /* RESPONSIVITY */
 
 /* give body a width of 80% and a max-width of 1300px;*/
